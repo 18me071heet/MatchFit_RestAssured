@@ -3,12 +3,12 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="test.List_User_Likes">
+      <class name="testAdmin.Get_Admin_Profile">
         <methods>
           <include name="setup"/>
-          <include name="userLikes"/>
+          <include name="getAdminProfile"/>
         </methods>
-      </class> <!-- test.List_User_Likes -->
+      </class> <!-- testAdmin.Get_Admin_Profile -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -16,7 +16,7 @@ public class AuthManager {
 	            RestAssured.baseURI = ConfigReader.getProperty("baseURI");
 
 	            LogIn_Payload payload = new LogIn_Payload(
-	                "heet.n@inheritx.com",
+	                "senzu.sen@yopmail.com",
 	                "Test@123"
 	            );
 

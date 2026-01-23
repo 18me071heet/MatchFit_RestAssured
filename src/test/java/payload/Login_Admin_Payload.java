@@ -1,0 +1,30 @@
+package payload;
+
+public class Login_Admin_Payload {
+
+	private String identifier;
+    private String password;
+
+    public Login_Admin_Payload() {}
+
+    public Login_Admin_Payload(String identifier, String password) {
+        this.identifier = identifier;
+        this.password = password;
+    }
+
+    public String getIdentifier() {
+        return identifier;
+    }
+
+    public void setIdentifier(String identifier) {
+        this.identifier = identifier;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}

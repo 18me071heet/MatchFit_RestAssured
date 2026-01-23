@@ -5,7 +5,8 @@
   
     <classes>
     
-        <!--<class name="test.Login"/>-->
+     <!-- <class name="test.Login"/>-->
+     <!--  <class name="test.Create_Player"></class>-->
        <!-- <class name="test.Get_Parent_Profile"></class>-->
      <!--  <class name="test.Create_Player"></class>-->
     <!--  <class name="test.Parent_Signup"></class>-->
@@ -25,7 +26,17 @@
    <!--  <class name="test.Edit_Comment_Post"></class>-->
    <!--  <class name="test.Delete_Comment_Post"></class>-->
    <!-- <class name="test.List_User_Likes"></class>-->
-   <class name="test.Like_Unlike_Post"></class>
+   <!-- <class name="test.Like_Unlike_Post"></class>-->
+   <!-- <class name="test.Report_Post"></class>-->
+   <!-- <class name="test.Follow_Unfollow_User"></class>-->
+   <!--<class name="test.Settings_2FA_Update"></class>-->
+   <!--<class name="test.Followers_List"></class>-->
+  <!-- <class name="test.Get_Notifications"></class>-->
+  <!--  <class name="test.Read_Specific_Notification"></class>-->
+  <!-- <class name="test.Scout_Directory"></class>-->
+  <!-- <class name="test.Get_Scout_Profile"></class> -->
+   <!--<class name="test.Scout_Search_Player"></class>-->
+   <class name="test.Update_Scout_Profile"></class>
     
     </classes>
   </test> <!-- Test -->

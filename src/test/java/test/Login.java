@@ -17,12 +17,12 @@ public class Login extends BaseTest {
     public void loginWithValidCredentials() {
 
         LogIn_Payload payload = new LogIn_Payload(
-            "heet.n@inheritx.com",
+            "senzu.sen@yopmail.com",
             "Test@123"
         );
 
         Response response =
-            requestSpec
+            requestSpec.contentType("application/json")
                 .body(payload)
             .when()
                 .post(ConfigReader.getProperty("loginEndpoint"))

@@ -8,6 +8,7 @@ public class ConfigReader {
 	static Properties prop;
 
     public static String getProperty(String key) {
+    	
         try {
             prop = new Properties();
             FileInputStream fis = new FileInputStream("src/test/resources/config.properties");

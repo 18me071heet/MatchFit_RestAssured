@@ -1,5 +1,7 @@
 package test;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -17,8 +19,8 @@ public class Generate_Unique_Username extends BaseTest {
 	                .when()
 	                    .get("/user/players/generate-username/") 
 	                .then()
-	                    .log().all()
 	                    .statusCode(200)
+	                    .body("success", equalTo(true)).log().all()
 	                    .extract()
 	                    .response();
 	}

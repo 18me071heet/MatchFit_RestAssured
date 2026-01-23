@@ -1,5 +1,7 @@
 package test;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -16,6 +18,7 @@ public class Delete_Comment_Post extends BaseTest {
 				.delete("/user/delete-comment/430/")
 				.then()
 				.statusCode(200)
+				 .body("success", equalTo(true))
 				.log().all()
 				.extract()
 				.response();

@@ -1,5 +1,7 @@
 package test;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import java.io.File;
 
 import org.testng.annotations.Test;
@@ -22,7 +24,7 @@ public class Create_Social_Post extends BaseTest {
 	                .multiPart("media_file", file)
 	                .multiPart("access", "public")
 	                .when().post("/user/social-feeds/")
-	                .then().statusCode(200).log().all()
+	                .then().statusCode(200) .body("success", equalTo(true)).log().all()
 	                .extract()
                     .response();
 	}

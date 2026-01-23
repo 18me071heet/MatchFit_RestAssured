@@ -1,5 +1,7 @@
 package test;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -16,6 +18,7 @@ public class List_User_Likes extends BaseTest{
 				.get("user/posts/369/likes/")
 				.then()
 				.statusCode(200)
+				.body("success", equalTo(true))
 				.log().all()
 				.extract()
 				.response();

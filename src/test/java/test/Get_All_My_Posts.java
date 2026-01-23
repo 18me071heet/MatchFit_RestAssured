@@ -1,5 +1,7 @@
 package test;
 
+import static org.hamcrest.Matchers.equalTo;
+
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -17,8 +19,7 @@ public class Get_All_My_Posts extends BaseTest {
 	                .when()
 	                    .get("/user/parents/myposts/") 
 	                .then()
-	                    .log().all()
-	                    .statusCode(200)
+	                    .statusCode(200).body("success", equalTo(true)).log().all()
 	                    .extract()
 	                    .response();
 	}

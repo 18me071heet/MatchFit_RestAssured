@@ -1,4 +1,6 @@
 package test;
+import static org.hamcrest.Matchers.equalTo;
+
 import java.io.File;
 import org.testng.annotations.Test;
 import base.BaseTest;
@@ -9,8 +11,6 @@ public class Parental_Verification_Upload extends BaseTest{
 	    public void uploadVerificationDocument() {
 
 	        int userId = 927; 
-
-	       
 	        File file = new File("C:\\Users\\INX\\OneDrive\\Documents\\Saved Pictures\\testing.png");
 
 	        Response response =
@@ -21,9 +21,10 @@ public class Parental_Verification_Upload extends BaseTest{
 	                    .post("/user/verification/upload/")
 	                .then()
 	                    .statusCode(201)
+	                    .body("success", equalTo(true))
 	                    .extract()
 	                    .response();
 
-	        System.out.println(response.asPrettyString());
+	       
 	    }
 }
