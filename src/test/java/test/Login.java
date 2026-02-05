@@ -17,7 +17,7 @@ public class Login extends BaseTest {
     public void loginWithValidCredentials() {
 
         LogIn_Payload payload = new LogIn_Payload(
-            "senzu.sen@yopmail.com",
+            "wisely.rom@yopmail.com",
             "Test@123"
         );
 

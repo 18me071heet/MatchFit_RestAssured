@@ -1,42 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+
+
+  <listeners>
+
+   <listener class-name="utility.ExtentReport_API"></listener>
+
+    </listeners>
+    
   <test thread-count="5" name="Test">
   
     <classes>
     
-     <!-- <class name="test.Login"/>-->
+       <!--   <class name="test.Login"/>-->
      <!--  <class name="test.Create_Player"></class>-->
-       <!-- <class name="test.Get_Parent_Profile"></class>-->
+     <!--   <class name="test.Get_Parent_Profile"></class>-->
      <!--  <class name="test.Create_Player"></class>-->
     <!--  <class name="test.Parent_Signup"></class>-->
     <!--  <class name="test.Parental_Verification_Upload"></class>-->
    <!--  <class name="test.Verification_Status"></class>-->
    <!-- <class name="test.Create_Social_Post"></class>-->
-   <!-- <class name="test.My_Players"></class>-->
-  <!--  <class name="test.Get_All_My_Posts"></class>-->
+   <!--  <class name="test.My_Players"></class>-->
+     <!--  <class name="test.Get_All_My_Posts"></class>-->
   <!-- <class name="test.Media_Add_Parent"></class>-->
   <!-- <class name="test.Generate_Unique_Username"></class>>-->
     <!--<class name="test.Edit_Player_Details"></class>-->
    <!-- <class name="test.Get_Verification_Requests"></class>-->
-    <!--<class name="test.Approve_Reject_Media_Requests"></class>-->
-   <!--  <class name="test.Search_User_Social_Feed"></class>-->
-    <!--  <class name="test.Get_Comment_Details"></class>-->
+    <!--  <class name="test.Approve_Reject_Media_Requests"></class>-->
+   <!-- <class name="test.Search_User_Social_Feed"></class>-->
+    <!-- <class name="test.Get_Comment_Details"></class>-->
     <!--  <class name="test.Add_Comment_Post"></class>-->
    <!--  <class name="test.Edit_Comment_Post"></class>-->
    <!--  <class name="test.Delete_Comment_Post"></class>-->
-   <!-- <class name="test.List_User_Likes"></class>-->
+   <!--  <class name="test.List_User_Likes"></class>-->
    <!-- <class name="test.Like_Unlike_Post"></class>-->
    <!-- <class name="test.Report_Post"></class>-->
    <!-- <class name="test.Follow_Unfollow_User"></class>-->
-   <!--<class name="test.Settings_2FA_Update"></class>-->
-   <!--<class name="test.Followers_List"></class>-->
-  <!-- <class name="test.Get_Notifications"></class>-->
+   <!-- <class name="test.Settings_2FA_Update"></class>-->
+     <!-- <class name="test.Followers_List"></class>  -->
+ <!--  <class name="test.Get_Notifications"></class> -->
   <!--  <class name="test.Read_Specific_Notification"></class>-->
   <!-- <class name="test.Scout_Directory"></class>-->
   <!-- <class name="test.Get_Scout_Profile"></class> -->
-   <!--<class name="test.Scout_Search_Player"></class>-->
-   <class name="test.Update_Scout_Profile"></class>
+   <!-- <class name="test.Scout_Search_Player"></class>-->
+   <!--  <class name="test.Update_Scout_Profile"></class>-->
+   <!--  <class name="test.Resend_OTP"></class>-->
+  <!-- <class name="test.Report_Comment"></class>-->
+   <!--  <class name="test.Forgot_Password"></class>-->
+    <class name="test.LogOut"></class> 
+    <!-- <class name="test.Reset_Password"></class> -->
+   <!--  <class name="test.Delete_Player"></class> -->
+   <!-- <class name="test.Update_Post"></class>-->
+  <!--  <class name="test.Delete_Post"></class>-->
+  <!-- <class name="test.User_Deactivate_Request"></class>-->
     
     </classes>
   </test> <!-- Test -->

@@ -5,8 +5,6 @@ public class Login_Admin_Payload {
 	private String identifier;
     private String password;
 
-    public Login_Admin_Payload() {}
-
     public Login_Admin_Payload(String identifier, String password) {
         this.identifier = identifier;
         this.password = password;

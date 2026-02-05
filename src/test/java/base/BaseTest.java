@@ -1,12 +1,13 @@
 package base;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeClass;
 import endPoints.AuthManager;
 import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 
 public class BaseTest {
-
+	public WebDriver driver;
 	  protected RequestSpecification requestSpec;
 
 	    @BeforeClass
