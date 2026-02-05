@@ -1,0 +1,90 @@
+2026-02-05 16:35:06 [main] INFO  RestAssured - Request method:	POST
+Request URI:	https://api-koradream.dev.inheritxdev.in/api/v1/user/email-login/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcwMzc1OTA2LCJpYXQiOjE3NzAyODk1MDYsImp0aSI6ImU4ZTVmYTdmMGU5MjQ1Zjk4ODY5ZWRmNGM3NDcxZDJhIiwidXNlcl9pZCI6IjUyMyIsInJvbGUiOiJQQVJFTlQifQ.pJFOzosHEKzQBeylUrop8hQbD7kAauoRzgi5qKk4i6A
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "identifier": "wisely.rom@yopmail.com",
+    "password": "Test@123"
+}
+2026-02-05 16:35:08 [main] INFO  RestAssured - HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 05 Feb 2026 11:05:08 GMT
+Content-Type: application/json
+Content-Length: 840
+Connection: keep-alive
+Vary: Accept, Accept-Language, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+Content-Language: en-us
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "success": true,
+    "message": "Login successful.",
+    "data": {
+        "message": "Login successful.",
+        "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3MDg5NDMwOCwiaWF0IjoxNzcwMjg5NTA4LCJqdGkiOiJkNDMwOTM2MzVhYWY0MWUyOTdhYmQ5MTRkYWVkOGI3MSIsInVzZXJfaWQiOiI1MjMifQ.DtZjHYn4oiZIH4QZkOJyfH4_WNiaGqErS7hzBfvg6p4",
+        "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcwMzc1OTA4LCJpYXQiOjE3NzAyODk1MDgsImp0aSI6IjMxZWQ4NzQ0YTNkNTRlYTBiMzFkMThiZDBjZjRhZDIxIiwidXNlcl9pZCI6IjUyMyIsInJvbGUiOiJQQVJFTlQifQ.XOHw0ELwVfSyMXgL5goAQy8oHUTW8uKaqRWsuWIRoZI",
+        "user": {
+            "user_id": 523,
+            "email": "wisely.rom@yopmail.com",
+            "first_name": "Wisely",
+            "last_name": "Rom",
+            "role": "PARENT",
+            "mobile": "+2128877552233",
+            "is_otp_verified": true,
+            "two_fa_enabled": false,
+            "is_profile_completed": true,
+            "is_document_uploaded": true
+        }
+    }
+}
+2026-02-05 16:35:08 [main] INFO  RestAssured - Request method:	POST
+Request URI:	https://api-koradream.dev.inheritxdev.in/api/v1/user/logout/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcwMzc1OTA2LCJpYXQiOjE3NzAyODk1MDYsImp0aSI6ImU4ZTVmYTdmMGU5MjQ1Zjk4ODY5ZWRmNGM3NDcxZDJhIiwidXNlcl9pZCI6IjUyMyIsInJvbGUiOiJQQVJFTlQifQ.pJFOzosHEKzQBeylUrop8hQbD7kAauoRzgi5qKk4i6A
+				Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2026-02-05 16:35:09 [main] INFO  RestAssured - HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 05 Feb 2026 11:05:09 GMT
+Content-Type: application/json
+Content-Length: 65
+Connection: keep-alive
+Vary: Accept, Accept-Language, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+Content-Language: en-us
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+
+{
+    "success": true,
+    "message": "Logged out successfully.",
+    "data": null
+}

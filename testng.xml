@@ -13,7 +13,7 @@
   
     <classes>
     
-       <!--   <class name="test.Login"/>-->
+       <class name="test.Login"/>
      <!--  <class name="test.Create_Player"></class>-->
      <!--   <class name="test.Get_Parent_Profile"></class>-->
      <!--  <class name="test.Create_Player"></class>-->

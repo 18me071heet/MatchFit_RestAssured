@@ -12,11 +12,16 @@ import io.restassured.response.Response;
 
 public class Read_Specific_Notification extends BaseTest {
 
+    private static final org.apache.logging.log4j.Logger logger = org.apache.logging.log4j.LogManager.getLogger(Read_Specific_Notification.class);
+
 	@Test
 	public void readSpecificNotification() {
 		
+        logger.info("Starting test: readSpecificNotification");
+
 		 Map<String, Object> body = new HashMap<>();
 		    body.put("notification_id", 2268); 
+            logger.info("Request Body prepared: " + body);
 		
 		Response response = requestSpec.header("ROLE","PARENT")
 				            .contentType("application/json")
@@ -29,6 +34,9 @@ public class Read_Specific_Notification extends BaseTest {
 				            .log().all()
 				            .extract()
 				            .response();
-				            
+		
+        logger.info("Response received with Status Code: " + response.getStatusCode());
+        logger.debug("Response Body: " + response.asString());
+        logger.info("Test finished: readSpecificNotification");
 	}
 }
